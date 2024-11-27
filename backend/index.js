@@ -14,7 +14,7 @@ app.use(cors({
 }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://tamannaprajapat2003:D3waJ2aW8gVVP8QQ@tamanna.uz93ixr.mongodb.net/todoAppDB?retryWrites=true&w=majority&appName=Tamanna', 
+mongoose.connect(dburl, 
      {useNewUrlParser: true, useUnifiedTopology:true}
 )
 .then(()=>console.log('connected!'))
